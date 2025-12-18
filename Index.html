@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Sole 24 Ore - Sport & Società</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #fdfcf8; /* Colore carta tipico del Sole */
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            border-top: 4px solid #000;
+            padding-top: 10px;
+        }
+
+        /* Header */
+        header {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .logo {
+            font-size: 28px;
+            letter-spacing: -1px;
+        }
+
+        /* Tipografia */
+        .occhiello {
+            color: #b40000; /* Rosso Sole 24 Ore */
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        h1 {
+            font-size: 42px;
+            line-height: 1.1;
+            margin: 0 0 15px 0;
+            font-weight: 900;
+        }
+
+        .sommario {
+            font-size: 20px;
+            font-weight: bold;
+            font-style: italic;
+            line-height: 1.4;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        /* Layout a Colonne */
+        .main-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        .article-text {
+            column-count: 2;
+            column-gap: 30px;
+            text-align: justify;
+            line-height: 1.6;
+            font-size: 17px;
+        }
+
+        /* Immagine */
+        .main-image {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .caption {
+            font-size: 13px;
+            color: #666;
+            font-style: italic;
+            margin-top: 5px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        /* Sidebar Box */
+        .sidebar-box {
+            background-color: #f9f4eb;
+            border-top: 3px solid #b40000;
+            padding: 20px;
+        }
+
+        .sidebar-box h3 {
+            color: #b40000;
+            margin-top: 0;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        .sidebar-box p {
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .main-content { grid-template-columns: 1fr; }
+            .article-text { column-count: 1; }
+            h1 { font-size: 32px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="logo">Il Sole 24 Ore <span style="font-weight: normal; font-size: 18px;">Plus</span></div>
+        <div>Sabato 18 Dicembre 2025</div>
+    </header>
+
+    <div class="occhiello">Sport & Società</div>
+    <h1>Lo sport di fronte al cambiamento di genere: il caso Alexandra Unger</h1>
+    <div class="sommario">
+        Dalle vette del ciclismo di Philippa York al traguardo di New York: come le discipline di resistenza stanno riscrivendo i confini dell'identità agonistica.
+    </div>
+
+    <div class="main-content">
+        <div class="left-col">
+            <img src="maratona.jpg" alt="Alexandra Unger" class="main-image">
+            <div class="caption">Alexandra Unger (all'epoca Andrea) durante la Maratona di New York corsa sotto la pioggia, momento cruciale della sua carriera.</div>
+            
+            <div class="article-text">
+                <p>Quando Robert Millar, leggendario scalatore del ciclismo degli anni Ottanta, annunciò anni dopo il ritiro la propria transizione diventando Philippa York, il mondo sportivo fu colto di sorpresa. Quel gesto, allora isolato e poco compreso, ha rappresentato uno dei primi casi pubblici di cambio di genere tra atleti di alto livello.</p>
+                
+                <p>Oggi, a distanza di tempo, quella storia appare come un precedente fondamentale di un fenomeno che sta emergendo con sempre maggiore frequenza. Anche l’atletica, disciplina simbolo della resistenza e dell’identità fisica, si trova ora a confrontarsi con questo cambiamento. È in questo contesto che si inserisce la vicenda di Andrea Unger, maratoneta internazionale.</p>
+
+                <p>Andrea Unger era conosciuto come un atleta solido, costante, capace di interpretare la maratona con intelligenza tattica e grande disciplina. Chilometri macinati in silenzio, lontano dai riflettori, fino a quel traguardo newyorkese corso sotto la pioggia, diventato simbolo di una fase di passaggio non solo sportiva.</p>
+
+                <p>«Per anni ho allenato il corpo senza ascoltare davvero me stessa», ha spiegato Alexandra in un’intervista. «La maratona insegna la pazienza e la verità: a un certo punto non puoi più fingere». Come nel caso di Millar/York, anche qui il cambiamento non cancella la carriera precedente, ma la ricontestualizza.</p>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            <div class="sidebar-box">
+                <h3>Il Quadro Normativo</h3>
+                <p><strong>L'Equilibrio:</strong> Le federazioni internazionali cercano un compromesso tra inclusione, tutela degli atleti ed equità competitiva.</p>
+                <p><strong>Evoluzione:</strong> Lo sport non è più soltanto prestazione, ma anche riconoscimento e rispetto della persona.</p>
+                <p><strong>Regole:</strong> Non esistono ancora soluzioni semplici o criteri universalmente accettati per tutte le discipline.</p>
+            </div>
+        </aside>
+    </div>
+</div>
+
+</body>
+</html>
